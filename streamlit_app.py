@@ -46,7 +46,7 @@ except URLError as e:
 streamlit.write('The user entered ', fruit_choice)
 
 #don´t run anything past here while we troubleshoot
-#streamlit.stop()
+
 streamlit.header("The fruit load list contains:")
 #Snowflake-related functions
 def get_fruit_load_list():
@@ -60,6 +60,7 @@ if streamlit.button('Get Fruit Load List'):
     my_data_rows = get_fruit_load_list()
     streamlit.dataframe(my_data_rows)
 
+streamlit.stop()
 # Let's put a pick list here so they can pick the fruit that should be added to the list
 add_my_fruit = streamlit.multiselect("Which fruit would you like to add:", list(my_fruit_list.index),['Avocado','Strawberries'])
 fruits_to_show = my_fruit_list.loc[fruits_selected]
