@@ -2,7 +2,6 @@ import streamlit
 import snowflake.connector
 import pandas
 import requests
-import delta-sharing
 from urllib.error import URLError
 
 streamlit.title('Test  Delta Sharing with Python')
