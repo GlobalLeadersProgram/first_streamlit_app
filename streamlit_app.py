@@ -5,7 +5,7 @@ import requests
 import delta-sharing
 from urllib.error import URLError
 
-streamlit.title('My Parents New Healthy Diner')
+streamlit.title('Test Delta Sharing with Python')
 
 streamlit.header('🥣 Breakfast Menu')
 streamlit.text('🥗 Omega 3 & Blueberry Oatmeal')
